@@ -5,6 +5,7 @@ import Detalles from "./views/detalles";
  import { ToastContainer, toast } from "react-toastify";
  import "react-toastify/dist/ReactToastify.css";
 import './App.css';
+import SwapiCharacters from './components/card';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
             <Link to="detalles">detalles</Link>
           </li>
         </ul>
+        
 
         <Button />
         <Routes>
@@ -27,6 +29,11 @@ function App() {
 
         <ToastContainer />
       </BrowserRouter>
+
+      <SwapiCharacters/>
+      
+
+
     </>
   );
 }
